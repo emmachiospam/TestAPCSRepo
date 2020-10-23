@@ -23,4 +23,17 @@ public class Demo {
   return result;
   }
 
+  public static String arrayDeepToString(int[][] arr) {
+    String ar = "";
+    for(int i = 0; i < arr.length; i++){
+      if(i != arr.length-1) {
+        ar = ar + arrToString(arr[i]) + ", ";
+      }
+      else{
+        ar = ar + arrToString(arr[i]);
+      }
+    }
+    return ar;
+  }
+
 }
