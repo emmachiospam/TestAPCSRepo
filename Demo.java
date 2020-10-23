@@ -36,4 +36,18 @@ public class Demo {
     return ar;
   }
 
+  public static int[][] create2DArray(int rows, int cols, int maxValue) {
+    int[][] array = new int[rows][cols];
+    for(int k = 0; k < rows; k++) {
+      int x;
+      for(int i = 0; i < cols; i++) {
+        array[k] = new int[cols];
+        for(int j = 0; j < cols; j++) {
+          x = (int)Math.round(Math.random() * (maxValue));
+          array[k][j] = x;
+        }
+      }
+    }
+    return array;
+  }
 }
