@@ -8,7 +8,7 @@ public class Demo {
     // else {
     //   cw9.printLoop(5);
     // }
-    System.out.println(arrayDeepToString(create2DArrayRadomized(6,10,3)).replaceAll("}, ","}\n"));
+    System.out.println(arrayDeepToString(create2DArrayRandomized(6,10,3)).replaceAll("}, ","}\n"));
   }
 
   public static String arrToString(int[] arr){
@@ -52,7 +52,7 @@ public class Demo {
     return array;
   }
 
-  public static int[][] create2DArrayRadomized(int rows, int cols, int maxValue) {
+  public static int[][] create2DArrayRandomized(int rows, int cols, int maxValue) {
     int[][] array = new int[rows][];
     for(int k = 0; k < rows; k++) {
       int cols2 = (int)Math.round(Math.random() * (cols + 1));
